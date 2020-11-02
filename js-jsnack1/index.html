@@ -3,9 +3,28 @@
     <head>
         <meta charset="utf-8">
         <title>JSnack 1</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="main.js" charset="utf-8"></script>
     </head>
     <body>
+        <div class="container">
+            <input type="text" placeholder="nome bici" id="bike-name">
+            <input type="number" placeholder="peso bici in Kg" id="bike-weight">
+            <button type="button" id="add-bike">Aggiungi bici alla lista</button>
 
+            <ol id="bike-list"></ol>
+            <button type="button" id="show-lightest-bike">Clicca per sapere qual è la bici più leggera</button>
+
+            <h1 style='display: none;'>
+                Il vincitore è:
+                <span id="lightest-bike-name"></span>.
+                con un peso di:
+                <span id="lightest-bike-weight"></span>
+            </h1>
+        </div>
+
+        <div id="templates" style="display: none;">
+            <li>list item text</li>
+        </div>
     </body>
 </html>
